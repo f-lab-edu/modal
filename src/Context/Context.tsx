@@ -1,11 +1,4 @@
-import {
-  createContext,
-  useState,
-  useContext,
-  type ReactNode,
-  useCallback,
-  useMemo,
-} from "react";
+import { createContext, useState, useCallback, useMemo } from "react";
 
 export const ModalDispatchContext = createContext<any>({
   open: () => {},
@@ -34,8 +27,6 @@ export const ModalProvider = ({ children }: any) => {
     () => ({ openModal, closeModal }),
     [openModal, closeModal]
   );
-
-  //   const values = { openModal, closeModal };
 
   return (
     <ModalDataContext.Provider value={modals}>
