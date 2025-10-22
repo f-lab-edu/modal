@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { cloneDeep } from "lodash";
 
-import { ModalDispatchContext, ModalDataContext } from "../components/Context";
+import { ModalDispatchContext, ModalDataContext } from "../Context/Context";
 
 const DISPATCH = "dispatch" as const;
 const MODALS = "modals" as const;

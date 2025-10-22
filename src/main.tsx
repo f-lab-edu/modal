@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
-import { ModalProvider } from "./components/Context.tsx";
+import { ModalProvider } from "./Context/Context.tsx";
 
 import App from "./App.tsx";
 
