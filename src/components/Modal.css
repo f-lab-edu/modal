@@ -1,0 +1,21 @@
+.modal {
+  width: 40%;
+  max-width: 600px;
+  height: 60%;
+  max-height: 800px;
+  border-radius: 8px;
+  background-color: mistyrose;
+  position: relative;
+
+  /* 중앙 정렬 */
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+
+  /* 바닥 붙이기 정렬 */
+  /* position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); */
+}
