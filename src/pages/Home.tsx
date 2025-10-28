@@ -1,16 +1,31 @@
 import useModal from "../hooks/useModal";
 
-import Modal from "../components/Modal";
+import Modal from "../components/GeneralModal";
 
 const Home = () => {
   const { openModal } = useModal("dispatch");
 
-  // TODO : 여기 리렌더링 왜 되냐 -> context 에서 함수객체를 계속 만들어서
-
   const handleClick = () => {
-    openModal({
-      component: <Modal />,
-    });
+    openModal(
+      <Modal
+        title={"hi there"}
+        content={"sjsjsjsjsjsjsj hihihihihihi kkkkk ggg 예에~~~"}
+        button={[
+          {
+            text: "확 인",
+            onClick: () => {
+              console.log(1111, "확인");
+            },
+          },
+          {
+            text: "취 소",
+            onClick: () => {
+              console.log(2222222, "취소");
+            },
+          },
+        ]}
+      />
+    );
   };
 
   return (
