@@ -1,7 +1,12 @@
-.modal-base {
+.general-modal-layout {
   position: fixed;
   inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.modal-frame {
+  background-color: #ffffff;
+  border-radius: 8px;
 }
