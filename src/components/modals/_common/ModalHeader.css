@@ -1,0 +1,25 @@
+.modal-header {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px 8px 0 0;
+  padding: 12px 24px 8px;
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.close-button {
+  width: 24px;
+  height: 24px;
+  background-color: c;
+}
+
+.theme-default {
+  background-color: #ffffff;
+}
+
+.theme-orange {
+  background-color: #ffac09;
+}
