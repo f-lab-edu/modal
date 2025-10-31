@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   background-color: #eeeeee;
   height: 100%;
@@ -25,5 +29,4 @@ body {
   top: 0;
   left: 0;
   display: none;
-  border: 2px solid red;
 }
