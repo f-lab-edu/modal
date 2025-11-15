@@ -1,11 +1,11 @@
-import ModalRenderer from "./components/ModalRenderer";
+import ModalContainer from "./components/modals/ModalContainer";
 import Home from "./pages/Home";
 
 function App() {
   return (
     <>
       <Home />
-      <ModalRenderer />
+      <ModalContainer />
     </>
   );
 }

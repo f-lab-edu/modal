@@ -1,37 +1,13 @@
-import { useEffect } from "react";
-
-import useModal from "../../../hooks/useModal";
-import useToggle from "../../../hooks/useToggle";
-
-import GeneralModalLayout from "../_layout/GeneralModalLayout";
+import GeneralModalLayout from "../_common/GeneralModalLayout";
 import ModalHeader from "../_common/ModalHeader";
 import ModalFooter from "../_common/ModalFooter";
 import ModalContent from "../_common/ModalContent";
 
-const ConfirmModal = () => {
-  const { closeModal } = useModal("dispatch");
-  const { value: isOpen, setFalse: setClose } = useToggle(true);
-
-  useEffect(() => {
-    let timerId = 0;
-
-    if (!isOpen) {
-      timerId = setTimeout(() => {
-        closeModal("confirmModal");
-      }, 400);
-    }
-
-    return () => {
-      if (!isOpen && timerId) {
-        clearTimeout(timerId);
-      }
-    };
-  }, [isOpen]);
-
+const ConfirmModal = ({ closeModal, name, ...props }: any) => {
   return (
-    <GeneralModalLayout isOpen={isOpen}>
+    <GeneralModalLayout>
       <ModalHeader theme="orange">
-        <ModalHeader.CloseButton onCloseClick={setClose} />
+        <ModalHeader.CloseButton onCloseClick={closeModal} />
       </ModalHeader>
 
       <ModalContent>
@@ -42,12 +18,12 @@ const ConfirmModal = () => {
         <ModalFooter.Button
           theme="confirm"
           text="확 인"
-          onButtonClick={setClose}
+          onButtonClick={closeModal}
         />
         <ModalFooter.Button
           theme="cancel"
           text="취 소"
-          onButtonClick={setClose}
+          onButtonClick={closeModal}
         />
       </ModalFooter>
     </GeneralModalLayout>
