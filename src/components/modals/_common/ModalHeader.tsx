@@ -1,8 +1,8 @@
 import type { ReactNode } from "react";
 
-import icon_close from "../../../assets/icon_close.png";
+import icon_close from "@/assets/icon_close.png";
 
-import "./ModalHeader.css";
+import "@/components/modals/_common/ModalHeader.css";
 
 const ModalHeader = ({
   theme = "default",

@@ -1,9 +1,9 @@
 import { useLayoutEffect } from "react";
 import { createPortal } from "react-dom";
 
-import useModal from "../../hooks/useModal";
+import useModal from "@/hooks/useModal";
 
-import ModalOverlay from "./_overlay/ModalOverlay";
+import ModalOverlay from "@/components/modals/_overlay/ModalOverlay";
 
 const ModalContainer = () => {
   const modals = useModal("modals");

@@ -1,8 +1,8 @@
-import { MODAL_NAME } from "../constants/modals";
+import { MODAL_NAME } from "@/constants/modals";
 
-import useModal from "../hooks/useModal";
+import useModal from "@/hooks/useModal";
 
-import ConfirmModal from "../components/modals/ConfirmModal/ConfirmModal";
+import ConfirmModal from "@/components/modals/ConfirmModal";
 
 const Home = () => {
   const { openModal } = useModal("dispatch");

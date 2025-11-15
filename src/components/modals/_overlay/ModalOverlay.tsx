@@ -1,14 +1,14 @@
 import { useRef, type ReactNode } from "react";
 import { Transition } from "react-transition-group";
 
-import { type TModalName } from "../../../constants/modals";
+import { type TModalName } from "@/constants/modals";
 
-import useModal from "../../../hooks/useModal";
-import useToggle from "../../../hooks/useToggle";
+import useModal from "@/hooks/useModal";
+import useToggle from "@/hooks/useToggle";
 
-import Dimmed from "./Dimmed";
+import Dimmed from "@/components/modals/_overlay/Dimmed";
 
-import "./ModalOverlay.css";
+import "@/components/modals/_overlay/ModalOverlay.css";
 
 const DURATION = 300;
 

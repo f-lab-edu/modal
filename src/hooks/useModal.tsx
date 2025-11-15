@@ -6,7 +6,7 @@ import {
   ModalDataContext,
   type TModalData,
   type TModalDispatch,
-} from "../Context/Context";
+} from "@/Context/ModalContext";
 
 const DISPATCH = "dispatch";
 const MODALS = "modals";

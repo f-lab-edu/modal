@@ -1,9 +1,18 @@
-import GeneralModalLayout from "../_common/GeneralModalLayout";
-import ModalHeader from "../_common/ModalHeader";
-import ModalFooter from "../_common/ModalFooter";
-import ModalContent from "../_common/ModalContent";
+import { type TModalName } from "@/constants/modals";
 
-const ConfirmModal = ({ closeModal, name, ...props }: any) => {
+import GeneralModalLayout from "@/components/modals/_common/GeneralModalLayout";
+import ModalHeader from "@/components/modals/_common/ModalHeader";
+import ModalFooter from "@/components/modals/_common/ModalFooter";
+import ModalContent from "@/components/modals/_common/ModalContent";
+
+const ConfirmModal = ({
+  closeModal,
+  name,
+  ...props
+}: {
+  closeModal: () => void;
+  name: TModalName;
+}) => {
   return (
     <GeneralModalLayout>
       <ModalHeader theme="orange">

@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-import "./ModalFooter.css";
+import "@/components/modals/_common/ModalFooter.css";
 
 const ModalFooter = ({ children }: { children: ReactNode }) => {
   return <div className="modal-footer">{children}</div>;

@@ -1,6 +1,6 @@
 import { createContext, useState, useCallback, useMemo, type JSX } from "react";
 
-import { type TModalName } from "../constants/modals";
+import { type TModalName } from "@/constants/modals";
 
 export type TModalData<N = TModalName, P = {}> = {
   Component: React.ComponentType<P & { name: N } & { closeModal: () => void }>;

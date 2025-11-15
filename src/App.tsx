@@ -1,5 +1,5 @@
-import ModalContainer from "./components/modals/ModalContainer";
-import Home from "./pages/Home";
+import ModalContainer from "@/components/modals/ModalContainer";
+import Home from "@/pages/Home";
 
 function App() {
   return (
