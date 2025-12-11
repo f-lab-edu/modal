@@ -10,7 +10,7 @@ import Dimmed from "@/components/modals/_overlay/Dimmed";
 
 import "@/components/modals/_overlay/ModalOverlay.css";
 
-const DURATION = 300;
+const DURATION = 200;
 
 const transitionStyles = {
   entering: { top: "0%", transform: "translateY(0%)" },
@@ -20,7 +20,7 @@ const transitionStyles = {
 } as any;
 
 const defaultStyle = {
-  transition: `top ${DURATION}ms cubic-bezier(0.78,-0.06, 0.14, 1.04), transform ${DURATION}ms cubic-bezier(0.78,-0.06, 0.14, 1.04)`,
+  transition: `top ${DURATION}ms linear, transform ${DURATION}ms linear`,
   top: "50%",
   transform: "translateY(50%)",
 };
