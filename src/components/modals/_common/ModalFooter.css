@@ -12,7 +12,6 @@
 .modal-button {
   /* default style 제거 */
   border: none;
-  outline: none;
   background-color: inherit;
   cursor: pointer;
 
