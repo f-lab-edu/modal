@@ -20,12 +20,8 @@ const CloseButton = ({
   onCloseClick: (e: MouseEvent) => void;
 }) => {
   return (
-    <button
-      aria-label="close button"
-      className="close-button"
-      onClick={onCloseClick}
-    >
-      <img src={icon_close} className="close-button-img" />
+    <button aria-label="닫기" className="close-button" onClick={onCloseClick}>
+      <img src={icon_close} />
     </button>
   );
 };
