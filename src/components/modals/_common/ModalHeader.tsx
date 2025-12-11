@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { ReactNode, MouseEvent } from "react";
 
 import icon_close from "@/assets/icon_close.png";
 
@@ -14,14 +14,19 @@ const ModalHeader = ({
   return <div className={`modal-header theme-${theme}`}>{children}</div>;
 };
 
-const CloseButton = ({ onCloseClick }: { onCloseClick: () => void }) => {
+const CloseButton = ({
+  onCloseClick,
+}: {
+  onCloseClick: (e: MouseEvent) => void;
+}) => {
   return (
-    <img
-      src={icon_close}
-      alt="modal close button"
+    <button
+      aria-label="close button"
       className="close-button"
       onClick={onCloseClick}
-    />
+    >
+      <img src={icon_close} className="close-button-img" />
+    </button>
   );
 };
 

@@ -11,9 +11,16 @@
 }
 
 .close-button {
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.close-button-img {
   width: 24px;
   height: 24px;
-  background-color: c;
 }
 
 .theme-default {
