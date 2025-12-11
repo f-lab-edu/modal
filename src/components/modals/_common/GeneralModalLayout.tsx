@@ -1,4 +1,4 @@
-import { type ReactNode } from "react";
+import { type ReactNode, type RefObject } from "react";
 
 import "@/components/modals/_common/GeneralModalLayout.css";
 
@@ -9,9 +9,11 @@ import "@/components/modals/_common/GeneralModalLayout.css";
  */
 const GeneralModalLayout = ({
   size = "s",
+  ref,
   children,
 }: {
   size?: "s" | "m" | "l";
+  ref?: RefObject<HTMLDivElement>;
   children: ReactNode;
 }) => {
   const sizePreset = { width: "400px" };
@@ -30,7 +32,11 @@ const GeneralModalLayout = ({
       break;
   }
 
-  return <div style={{ ...sizePreset }}>{children}</div>;
+  return (
+    <div role="dialog" style={{ ...sizePreset }} ref={ref}>
+      {children}
+    </div>
+  );
 };
 
 export default GeneralModalLayout;

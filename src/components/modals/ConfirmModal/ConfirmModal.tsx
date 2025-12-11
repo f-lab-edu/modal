@@ -1,4 +1,5 @@
 import type { RefObject } from "react";
+
 import { type TModalName } from "@/constants/modals";
 
 import GeneralModalLayout from "@/components/modals/_common/GeneralModalLayout";
@@ -19,29 +20,29 @@ const ConfirmModal = ({
   const { keyboardTrapContainerRef } = useKeyboard();
 
   return (
-    <GeneralModalLayout>
-      <div ref={keyboardTrapContainerRef as RefObject<HTMLDivElement>}>
-        <ModalHeader theme="orange">
-          <ModalHeader.CloseButton onCloseClick={closeModal} />
-        </ModalHeader>
+    <GeneralModalLayout
+      ref={keyboardTrapContainerRef as RefObject<HTMLDivElement>}
+    >
+      <ModalHeader theme="orange">
+        <ModalHeader.CloseButton onCloseClick={closeModal} />
+      </ModalHeader>
 
-        <ModalContent>
-          <div>여기엔 Modal 내용이 들어간다~</div>
-        </ModalContent>
+      <ModalContent>
+        <div>여기엔 Modal 내용이 들어간다~</div>
+      </ModalContent>
 
-        <ModalFooter>
-          <ModalFooter.Button
-            theme="confirm"
-            text="확 인"
-            onButtonClick={closeModal}
-          />
-          <ModalFooter.Button
-            theme="cancel"
-            text="취 소"
-            onButtonClick={closeModal}
-          />
-        </ModalFooter>
-      </div>
+      <ModalFooter>
+        <ModalFooter.Button
+          theme="confirm"
+          text="확 인"
+          onButtonClick={closeModal}
+        />
+        <ModalFooter.Button
+          theme="cancel"
+          text="취 소"
+          onButtonClick={closeModal}
+        />
+      </ModalFooter>
     </GeneralModalLayout>
   );
 };
