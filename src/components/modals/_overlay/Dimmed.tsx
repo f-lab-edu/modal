@@ -1,4 +1,4 @@
-import "@/components/modals/_overlay/Dimmed.css";
+import "./Dimmed.css";
 
 const Dimmed = ({ closeModal }: { closeModal: () => void }) => {
   return <div className="dimmed" onClick={closeModal}></div>;

@@ -1,6 +1,6 @@
 import { type ReactNode, type RefObject } from "react";
 
-import "@/components/modals/_common/GeneralModalLayout.css";
+import "./GeneralModalLayout.css";
 
 /**
  * GeneralModalLayout

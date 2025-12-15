@@ -8,7 +8,7 @@ import useToggle from "@/hooks/useToggle";
 
 import Dimmed from "@/components/modals/_overlay/Dimmed";
 
-import "@/components/modals/_overlay/ModalOverlay.css";
+import "./ModalOverlay.css";
 
 const DURATION = 200;
 

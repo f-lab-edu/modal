@@ -2,7 +2,7 @@ import type { ReactNode, MouseEvent } from "react";
 
 import icon_close from "@/assets/icon_close.png";
 
-import "@/components/modals/_common/ModalHeader.css";
+import "./ModalHeader.css";
 
 const ModalHeader = ({
   theme = "default",

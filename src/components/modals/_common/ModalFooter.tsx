@@ -1,6 +1,6 @@
-import type { ReactNode } from "react";
+import type { ReactNode, MouseEvent } from "react";
 
-import "@/components/modals/_common/ModalFooter.css";
+import "./ModalFooter.css";
 
 const ModalFooter = ({ children }: { children: ReactNode }) => {
   return <div className="modal-footer">{children}</div>;
@@ -13,7 +13,7 @@ const Button = ({
 }: {
   theme?: "confirm" | "cancel";
   text: string;
-  onButtonClick: () => void;
+  onButtonClick: (e: MouseEvent) => void;
 }) => {
   return (
     <button className={`modal-button theme-${theme}`} onClick={onButtonClick}>
